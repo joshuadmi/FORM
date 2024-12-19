@@ -1,5 +1,5 @@
 body {
-  background-color: aquamarine;
+  background-color: #263973;
 }
 /* Titre formulaire */
 h1 {
@@ -12,12 +12,18 @@ form {
   flex-direction: column;
   width: 60vw;
   margin: auto;
+  background-color: #9e6253;
+  padding: 3rem;
 }
 /* input */
 input {
   position: relative;
   padding: 0.8em;
   margin-bottom: 1rem;
+  background-color: #f2eceb;
+}
+input:hover {
+  border: 2px solid #da0dd6;
 }
 /* label */
 label {
@@ -41,14 +47,14 @@ svg {
 .btn {
   width: 30vw;
   height: 30vw;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 50%;
-  background: linear-gradient(120deg, palevioletred);
-  background-color: palevioletred;
-  border: 1px solid black;
+  background: linear-gradient(120deg, #da0dd6);
+  background-color: #3f5efb;
+  border: 3px solid #da0dd6;
   text-transform: uppercase; /*Majuscule */
   overflow: hidden;
   position: relative;
@@ -59,13 +65,13 @@ svg {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(120deg, transparent, rgb(145, 4, 4), transparent);
+  background: linear-gradient(120deg, transparent, #da0dd6, transparent);
   transform: translateX(-100%);
   transition: 0.6s;
   position: absolute;
 }
 .btn:hover {
-  box-shadow: 0 0 20px 5px rgb(0, 174, 255);
+  box-shadow: 0 0 20px 5px #da0dd6;
 }
 .btn:hover::before {
   transform: translateX(100%);

@@ -57,8 +57,11 @@ function passwordValidation() {
     strengthText.textContent = "Fort";
   }
 
+  // Vérifier si le mot de passe contient au moins une lettre, un chiffre et un caractère spécial
   if (!passwordPattern.test(password)) {
     console.log("Password not valid");
+    strengthText.textContent =
+      "Le mot de passe doit dontenir au moins une lettre, un chiffre et un caractère spécial";
     return false;
   } else {
     console.log("Password valid");
