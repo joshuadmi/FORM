@@ -48,11 +48,13 @@ function passwordValidation() {
   if (password.length < 6) {
     passwordStrength.className = "weak";
     strengthText.textContent = "Faible";
-  } else if (password.length > 6 && password.length < 9) {
+  } else if (password.length >= 6 && password.length < 9) {
     passwordStrength.className = "average";
+    strengthText.style.color = "yellow";
     strengthText.textContent = "Moyen";
   } else {
     passwordStrength.className = "strong";
+    strengthText.style.color = "green";
     strengthText.textContent = "Fort";
   }
 }

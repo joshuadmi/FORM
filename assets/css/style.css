@@ -1,3 +1,7 @@
+body {
+  margin-top: 2;
+  background-color: aquamarine;
+}
 /* Titre formulaire */
 h1 {
   text-align: center;
@@ -33,12 +37,14 @@ button {
   cursor: pointer;
   font-size: 1rem;
   background-color: palevioletred;
+  border: 1em solid red;
 }
 button:hover {
-  scale: 5;
+  scale: 12;
+  background-color: yellow;
 }
 /* couleur pour mdp */
-.rouge {
+.weak {
   color: red;
 }
 .orange {
@@ -49,6 +55,10 @@ button:hover {
 }
 /* Tablette responsive */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+  svg {
+    top: 105px;
+    right: 13vw;
+  }
 }
 /* Ordi reponsive */
 @media screen and (min-width: 1024px) {
