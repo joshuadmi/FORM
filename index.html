@@ -54,23 +54,28 @@
         required
         autocomplete="email"
       />
-      <label for="password">Mot de passe</label>
+      <label for="password"
+        >Mot de passe (contient au moins une lettre, un chiffre, et un symbole)
+        // il faut ameliorer ça</label
+      >
       <input
         type="password"
         name="password"
         id="password"
         required
-        autocomplete="current-password"
+        autocomplete="new-password"
       />
-      <div id="password-strength"><span id="strength-text"></span></div>
+      <div id="password-strength"></div>
+      <span id="strength-text"></span>
       <label for="password-confirmation">Confirmez le mot de passe</label>
       <input
-        type="password-confirmation"
+        type="password"
         name="password-confirmation"
         id="password-confirmation"
+        autocomplete="new-password"
         required
       />
-      <button type="submit">S'inscrire</button>
+      <button class="btn" type="submit">S'inscrire</button>
     </form>
   </body>
 </html>
