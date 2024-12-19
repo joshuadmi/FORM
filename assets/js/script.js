@@ -99,8 +99,10 @@ signUpForm.addEventListener("submit", (event) => {
     isPasswordConfirmed
   ) {
     console.log("Formulaire soumis avec succès");
+    alert("Formulaire soumis avec succès");
   } else {
     console.log("Validation du formulaire échouée");
+    alert("Validation du formulaire échouée");
   }
 });
 

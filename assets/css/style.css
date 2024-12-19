@@ -1,46 +1,69 @@
 body {
   background-color: #263973;
+  font-family: Poppins, sans-serif;
 }
+
 /* Titre formulaire */
 h1 {
   text-align: center;
   margin: 3rem;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
 }
+
 /* Le formulaire */
-form {
+#signup-form {
   display: flex;
   flex-direction: column;
   width: 60vw;
   margin: auto;
   background-color: #9e6253;
   padding: 3rem;
+  border-radius: 10px;
+  max-width: 600px;
 }
+
 /* input */
-input {
+.champ {
   position: relative;
   padding: 0.8em;
   margin-bottom: 1rem;
   background-color: #f2eceb;
-}
-input:hover {
-  border: 2px solid #da0dd6;
-}
-/* label */
-label {
-  margin-bottom: 0.5rem;
-}
-/* SVG */
-svg {
-  position: absolute;
-  width: 40px;
-  top: 160px;
-  right: 7vw;
+  border-radius: 5px;
 }
 
-/* SVG pour les icones */
-#login-error-icon,
-#login-valid-icon {
+.champ:hover {
+  border: 2px solid #da0dd6;
+}
+
+/* label */
+.text-champ {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+/* mettre en place l'indicateur de la validation du login */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Donner un espace pour l'indicateur de la validation du login */
+.input-container input {
+  width: 100%;
+  padding-right: 30px;
+}
+
+/* SVG pour l'indicateur de la validation du login */
+.input-container svg {
   display: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
 }
 
 /* button */
@@ -48,17 +71,18 @@ svg {
   width: 30vw;
   height: 30vw;
   margin: 1rem auto;
-  padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 50%;
-  background: linear-gradient(120deg, #da0dd6);
-  background-color: #3f5efb;
-  border: 3px solid #da0dd6;
-  text-transform: uppercase; /*Majuscule */
+  background: radial-gradient(circle at 100px 100px, #3f5efb, #da0dd6);
+  text-transform: uppercase;
+  text-align: center;
   overflow: hidden;
   position: relative;
+  font-family: "Permanent Marker", serif;
+  letter-spacing: 2px;
 }
+
 .btn::before {
   content: "";
   top: 0;
@@ -70,9 +94,11 @@ svg {
   transition: 0.6s;
   position: absolute;
 }
+
 .btn:hover {
   box-shadow: 0 0 20px 5px #da0dd6;
 }
+
 .btn:hover::before {
   transform: translateX(100%);
 }
@@ -86,34 +112,34 @@ svg {
   padding: 0.2em;
   border-radius: 10px;
 }
+
 .weak {
   background-color: red;
 }
+
 .average {
   background-color: orangered;
 }
+
 .strong {
   background-color: green;
 }
+
 /* text pour Jauge de force */
 #strength-text {
   margin-bottom: 1rem;
 }
+
 /* Tablette responsive */
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-  svg {
-    right: 13vw;
-  }
   .btn {
     width: 20vw;
     height: 20vw;
   }
 }
+
 /* Ordi reponsive */
 @media screen and (min-width: 1024px) {
-  svg {
-    right: 16vw;
-  }
   .btn {
     width: 10vw;
     height: 10vw;
