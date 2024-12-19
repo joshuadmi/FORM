@@ -137,6 +137,7 @@ h1 {
   .btn {
     width: 150px;
     height: 150px;
+    font-size: 1.2rem;
   }
 }
 
@@ -145,5 +146,6 @@ h1 {
   .btn {
     width: 200px;
     height: 200px;
+    font-size: 1.5rem;
   }
 }
